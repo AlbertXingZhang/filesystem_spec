@@ -476,7 +476,7 @@ class AsyncFileSystem(AbstractFileSystem):
         if not isinstance(starts, Iterable):
             starts = [starts] * len(paths)
         if not isinstance(ends, Iterable):
-            ends = [starts] * len(paths)
+            ends = [ends] * len(paths)
         if len(starts) != len(paths) or len(ends) != len(paths):
             raise ValueError
         coros = [
